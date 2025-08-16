@@ -8,7 +8,6 @@ import {
   Save, 
   X,
   Camera,
-  Golf,
   Calendar,
   Target,
   Clock
@@ -315,7 +314,7 @@ const Profile = () => {
                 <div key={swing.id} className="border border-gray-200 rounded-lg p-4 hover:shadow-md transition-shadow">
                   <div className="flex items-center justify-between mb-3">
                     <div className="flex items-center space-x-3">
-                      <Golf className="h-5 w-5 text-golf-500" />
+                      <Target className="h-5 w-5 text-golf-500" />
                       <span className="font-medium text-gray-900">
                         {new Date(swing.date).toLocaleDateString('en-US', { 
                           month: 'short', 

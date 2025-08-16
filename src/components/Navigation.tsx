@@ -8,7 +8,7 @@ import {
   User, 
   Menu, 
   X,
-  Golf
+  Target
 } from 'lucide-react';
 
 const Navigation = () => {
@@ -32,7 +32,7 @@ const Navigation = () => {
           {/* Logo and brand */}
           <div className="flex items-center">
             <Link to="/" className="flex items-center space-x-2">
-              <Golf className="h-8 w-8 text-golf-600" />
+              <Target className="h-8 w-8 text-golf-600" />
               <span className="text-xl font-bold text-gray-900">SwingAI</span>
             </Link>
           </div>

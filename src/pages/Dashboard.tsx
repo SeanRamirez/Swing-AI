@@ -1,5 +1,5 @@
 import { useState, useEffect } from 'react';
-import { TrendingUp, Clock, Target, Award, Golf, Calendar } from 'lucide-react';
+import { TrendingUp, Clock, Target, Award, Calendar } from 'lucide-react';
 
 interface SwingData {
   id: string;
@@ -142,7 +142,7 @@ const Dashboard = () => {
             <div key={swing.id} className="border border-gray-200 rounded-lg p-4 hover:shadow-md transition-shadow">
               <div className="flex items-center space-x-4">
                 <div className="w-16 h-16 bg-gray-200 rounded-lg flex items-center justify-center">
-                  <Golf className="h-8 w-8 text-gray-400" />
+                  <Target className="h-8 w-8 text-gray-400" />
                 </div>
                 <div className="flex-1">
                   <p className="text-sm text-gray-500">{swing.date}</p>
