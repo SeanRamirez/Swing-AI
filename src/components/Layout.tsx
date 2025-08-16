@@ -49,7 +49,7 @@ export default function Layout({ children, currentPageName }: LayoutProps) {
 
   return (
     <SidebarProvider>
-      <div className="min-h-screen flex w-full bg-gradient-to-br from-slate-50 to-emerald-50">
+      <div className="min-h-screen w-full bg-gradient-to-br from-slate-50 to-emerald-50 relative">
         <style>
           {`
             :root {
@@ -67,7 +67,7 @@ export default function Layout({ children, currentPageName }: LayoutProps) {
         </style>
         
         {/* --- Desktop Sidebar --- */}
-        <Sidebar className="hidden md:flex border-r border-emerald-100/50 bg-white/90 backdrop-blur-md shadow-lg">
+        <Sidebar className="hidden md:flex fixed left-0 top-0 h-full w-64 border-r border-emerald-100/50 bg-white/90 backdrop-blur-md shadow-lg z-40">
           <SidebarHeader className="border-b border-emerald-100/50 p-6">
             <div className="flex items-center gap-3">
               <div className="w-12 h-12 bg-gradient-to-br from-emerald-600 to-emerald-700 rounded-xl flex items-center justify-center shadow-lg">
@@ -153,8 +153,8 @@ export default function Layout({ children, currentPageName }: LayoutProps) {
         </Sidebar>
 
         {/* --- Main Content Area --- */}
-        <main className="flex-1 flex flex-col pb-20 md:pb-0">
-          <div className="flex-1 overflow-auto">
+        <main className="flex-1 flex flex-col pb-20 md:pb-0 md:ml-64">
+          <div className="flex-1 overflow-auto p-6">
             {children}
           </div>
         </main>
