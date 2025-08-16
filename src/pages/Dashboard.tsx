@@ -1,4 +1,5 @@
 import { useState, useEffect } from 'react';
+import { Link } from 'react-router-dom';
 import { 
   TrendingUp, 
   Clock, 
@@ -100,10 +101,10 @@ const Dashboard = () => {
           <h1 className="text-3xl font-bold text-slate-900">Your Golf Dashboard</h1>
           <p className="text-slate-600 mt-2">Track your swing progress and master your technique</p>
         </div>
-        <button className="btn-primary mt-4 md:mt-0 flex items-center gap-2">
+        <Link to="/upload" className="btn-primary mt-4 md:mt-0 flex items-center gap-2">
           <Upload className="w-5 h-5" />
           Analyze New Swing
-        </button>
+        </Link>
       </div>
 
       {/* Top Metric Cards */}
@@ -212,7 +213,7 @@ const Dashboard = () => {
             </div>
             
             <div className="space-y-3">
-              <button className="w-full p-4 bg-gray-50 rounded-lg hover:bg-gray-100 transition-colors text-left group">
+              <Link to="/upload" className="w-full p-4 bg-gray-50 rounded-lg hover:bg-gray-100 transition-colors text-left group">
                 <div className="flex items-center justify-between">
                   <div className="flex items-center gap-3">
                     <Upload className="w-5 h-5 text-gray-600" />
@@ -223,9 +224,9 @@ const Dashboard = () => {
                   </div>
                   <ArrowRight className="w-4 h-4 text-gray-400 group-hover:translate-x-1 transition-transform" />
                 </div>
-              </button>
+              </Link>
 
-              <button className="w-full p-4 bg-gray-50 rounded-lg hover:bg-gray-100 transition-colors text-left group">
+              <Link to="/analysis" className="w-full p-4 bg-gray-50 rounded-lg hover:bg-gray-100 transition-colors text-left group">
                 <div className="flex items-center justify-between">
                   <div className="flex items-center gap-3">
                     <BarChart3 className="w-5 h-5 text-gray-600" />
@@ -236,9 +237,9 @@ const Dashboard = () => {
                   </div>
                   <ArrowRight className="w-4 h-4 text-gray-400 group-hover:translate-x-1 transition-transform" />
                 </div>
-              </button>
+              </Link>
 
-              <button className="w-full p-4 bg-gray-50 rounded-lg hover:bg-gray-100 transition-colors text-left group">
+              <Link to="/progress" className="w-full p-4 bg-gray-50 rounded-lg hover:bg-gray-100 transition-colors text-left group">
                 <div className="flex items-center justify-between">
                   <div className="flex items-center gap-3">
                     <TrendingUp className="w-5 h-5 text-gray-600" />
@@ -249,7 +250,7 @@ const Dashboard = () => {
                   </div>
                   <ArrowRight className="w-4 h-4 text-gray-400 group-hover:translate-x-1 transition-transform" />
                 </div>
-              </button>
+              </Link>
             </div>
           </div>
 
