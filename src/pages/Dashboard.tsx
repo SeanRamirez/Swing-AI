@@ -93,12 +93,12 @@ const Dashboard = () => {
   }
 
   return (
-    <div className="p-6">
+    <div className="p-6 bg-slate-50">
       {/* Header */}
       <div className="flex flex-col md:flex-row md:items-center md:justify-between mb-8">
         <div>
-          <h1 className="text-3xl font-bold text-gray-900">Your Golf Dashboard</h1>
-          <p className="text-gray-600 mt-2">Track your swing progress and master your technique</p>
+          <h1 className="text-3xl font-bold text-slate-900">Your Golf Dashboard</h1>
+          <p className="text-slate-600 mt-2">Track your swing progress and master your technique</p>
         </div>
         <button className="btn-primary mt-4 md:mt-0 flex items-center gap-2">
           <Upload className="w-5 h-5" />
